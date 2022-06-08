@@ -8,7 +8,7 @@
     <script src="scripts/main.js" defer></script>
   </head>
   <body>
-    <a-scene background="color: #333333">
+    <!-- <a-scene background="color: #333333">
       <a-assets>
           <img id="wood" src="images/wood.jpg" />
           <img id="wood2" src="images/wood2.jpg" />
@@ -66,6 +66,15 @@
         material="src: #grass; repeat: 10 10"
         shadow>
       </a-plane> 
+    </a-scene> -->
+    <a-scene>
+      <a-assets>
+        <img id="my-image" src="img/BatmanvSuperman.jpg">
+      </a-assets>
+      <!-- Using the asset management system. -->
+      <a-curvedimage src="#my-image" height="15.0" radius="5.7" theta-length="361" rotation="0 150 0" scale="0.8 0.8 0.8" position="0 2 5"></a-curvedimage>
+      <!-- Defining the URL inline. Not recommended but more comfortable for web developers. -->
+      <!--<a-curvedimage src="img/BatmanvSuperman.jpg"></a-curved-image>-->
     </a-scene>
   </body>
 </html>
