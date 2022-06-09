@@ -11,7 +11,7 @@
     <a-scene <!--style="background-image: url('images/space3.jpeg'); background-repeat: repeat;" --> >
       <a-assets>
           <img id="space" src="images/space3.jpeg"/>
-          <img id="wood2" src="images/wood2.jpg" />
+          <img id="earth" src="images/earth.png" />
           <img id="grass" src="images/grass.jpg" />
       </a-assets>
       <a-sky material="src: #space; repeat: 5 5"></a-sky>
@@ -33,7 +33,7 @@
         rotation="0 45 0" 
         radius="2"
         segments-height="53"
-        src="#"
+        material="src: #earth"
         shadow 
         animation__mouseenter="
           property: components.material.material.color; 
