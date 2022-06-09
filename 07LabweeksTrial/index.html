@@ -8,13 +8,21 @@
     <script src="scripts/main.js" defer></script>
   </head>
   <body>
-    <a-scene style="background-image: url('images/space3.jpeg'); background-repeat: repeat;">
+    <a-scene <!--style="background-image: url('images/space3.jpeg'); background-repeat: repeat;" --> >
       <a-assets>
-          <!-- <img id="space" src="images/space1.jpg"/>
+          <img id="space" src="images/space3.jpg"/>
           <img id="wood2" src="images/wood2.jpg" />
-          <img id="grass" src="images/grass.jpg" /> -->
+          <img id="grass" src="images/grass.jpg" />
       </a-assets>
-      
+      <a-sky id="background"
+        material="src: #space; repeat: 15 15"
+        position="0 0 -4" 
+        rotation="-90 0 0" 
+        width="100" 
+        height="100" 
+        color="#000000" 
+        shadow>
+        </a-sky>
 
       <!-- <a-camera>
         <a-entity id="mouseCursor"
