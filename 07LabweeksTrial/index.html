@@ -32,8 +32,9 @@
         </a-ring> 
       </a-camera> -->
     
-      <a-camera id="myCamera" position="0 1 0">
-        <a-cursor interaction-spawn="Event: click; mixin:voxel;"><a-cursor>
+          
+      <a-camera pointer-lock-enabled="true" position="0 1 0" id="myCamera">
+         <a-cursor fuse="true"></a-cursor>
       </a-camera>
       
       <a-box id="myBox" 
