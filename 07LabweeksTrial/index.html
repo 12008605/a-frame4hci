@@ -13,7 +13,7 @@
     <a-entity environment="preset: forest" preset-switcher id="environment" sound="src:https://www.youtube.com/watch?v=xNN7iTA57jM; autoplay:true;"></a-entity>
       <a-assets>
           <img id="space" src="images/space3.jpeg"/>
-          <img id="earth" src="images/earth.png" />
+          <img id="wood" src="images/wood.jpg" />
           <img id="grass" src="images/grass.jpg" />
       </a-assets>
       <a-sky material="src: #space; repeat: 5 5"></a-sky>
@@ -30,12 +30,12 @@
         </a-ring> 
       </a-camera> -->
       
-      <a-sphere id="myBox" 
+      <a-box id="myBox" 
         position="0 1.5 -10" 
         rotation="0 45 0" 
-        radius="2"
+        width="9"
         segments-height="53"
-        material="src: #earth"
+        material="src: #wood"
         shadow 
         animation__mouseenter="
           property: components.material.material.color; 
@@ -49,7 +49,7 @@
           to: red; 
           startEvents: mouseleave; 
           dur: 500;">  
-      </a-sphere>
+      </a-box>
       <!--
       <a-plane id="ground"
         position="0 0 -4" 
