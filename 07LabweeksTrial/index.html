@@ -8,8 +8,14 @@
     <script src="https://unpkg.com/aframe-environment-component@1.1.0/dist/aframe-environment-component.min.js"></script>
     <script src="scripts/main.js" defer></script>
     <script src="https://codechangers.com/physics.js"></script>
+    <script src="https://www.codechangers.com/lessons/vr/aframe/physics.js"></script>
+
   </head>
   <body>
+
+    <script src="https://www.codechangers.com/lessons/vr/aframe/shoot.js"></script>
+    <script src="https://www.codechangers.com/lessons/vr/aframe/vr.js"></script>
+
     <a-scene <!--style="background-image: url('images/space3.jpeg'); background-repeat: repeat;" --> >
     <a-entity environment="preset: forest" preset-switcher id="environment" sound="src:https://www.youtube.com/watch?v=xNN7iTA57jM; autoplay:true;"></a-entity>
       <a-assets>
@@ -69,8 +75,8 @@
       </a-assets>
       <!-- Using the asset management system.
       <a-curvedimage src="#my-image" height="15.0" radius="5.7" theta-length="361" rotation="0 -150 0" scale="0.8 0.8 0.8" position="0 2 5"></a-curvedimage>
-      <!-- Defining the URL inline. Not recommended but more comfortable for web developers. -->
-      <!--<a-curvedimage src="img/BatmanvSuperman.jpg"></a-curved-image>-->
+      <!-- Defining the URL inline. Not recommended but more comfortable for web developers.
+      <!--<a-curvedimage src="img/BatmanvSuperman.jpg"></a-curved-image>
     </a-scene> -->
 
   </body>
