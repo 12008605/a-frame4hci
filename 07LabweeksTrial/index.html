@@ -5,10 +5,12 @@
     <title>LabWeeks</title>
     <meta name="viewport" content="width=device-width">
     <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+    <script src="https://unpkg.com/aframe-environment-component@1.1.0/dist/aframe-environment-component.min.js"></script>
     <script src="scripts/main.js" defer></script>
   </head>
   <body>
     <a-scene <!--style="background-image: url('images/space3.jpeg'); background-repeat: repeat;" --> >
+    <a-entity environment></a-entity>
       <a-assets>
           <img id="space" src="images/space3.jpeg"/>
           <img id="earth" src="images/earth.png" />
