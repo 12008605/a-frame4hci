@@ -43,19 +43,6 @@
         width="9"
         segments-height="53"
         material="src: #wood"
-        shadow <!--
-        animation__mouseenter="
-          property: components.material.material.color; 
-          type: color; 
-          to: blue; 
-          startEvents: mouseenter; 
-          dur: 500;"
-        animation__mouseleave="
-          property: components.material.material.color; 
-          type: color; 
-          to: red; 
-          startEvents: mouseleave; 
-          dur: 500;">  -->
       </a-box>
       <a-sphere dynamic-body radius="0.5" position="0 1.5 -7" color="#9FD8EF"></a-sphere>
       <a-sphere dynamic-body radius="0.5" position="-2 1.5 -7" color="#9FD8EF"></a-sphere>
@@ -79,7 +66,7 @@
       <a-assets>
         <img id="my-image" src="images/space1.jpg">
       </a-assets>
-      <!-- Using the asset management system. -->
+      <!-- Using the asset management system.
       <a-curvedimage src="#my-image" height="15.0" radius="5.7" theta-length="361" rotation="0 -150 0" scale="0.8 0.8 0.8" position="0 2 5"></a-curvedimage>
       <!-- Defining the URL inline. Not recommended but more comfortable for web developers. -->
       <!--<a-curvedimage src="img/BatmanvSuperman.jpg"></a-curved-image>-->
