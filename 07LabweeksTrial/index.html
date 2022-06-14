@@ -1,42 +1,22 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8">
-    <title>LabWeeks</title>
-    <meta name="viewport" content="width=device-width">
-    <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
-    <script src="https://unpkg.com/aframe-environment-component@1.1.0/dist/aframe-environment-component.min.js"></script>
-    <script src="scripts/main.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aframe/0.7.1/aframe.min.js"></script>
     <script src="https://codechangers.com/physics.js"></script>
-    <script src="https://codechangers.com/shoot-full.js"></script>
-    <script src="https://www.codechangers.com/lessons/vr/aframe/physics.js"></script>
   </head>
   <body>
     <a-scene id="myScene">
-      <a-entity environment="preset: forest" preset-switcher id="environment" sound="src:https://www.youtube.com/watch?v=xNN7iTA57jM; autoplay:true;"></a-entity>
-      <a-assets>
-          <img id="wood" src="images/wood.jpg" />
-      </a-assets>
-    
-      <a-camera pointer-lock-enabled="true" position="0 1 0" id="myCamera">
-         <a-cursor fuse="true"></a-cursor>
-      </a-camera>
-
-      <!-- CAMERA 2
+      <a-plane id="floor" static-body height="1000" width="1000" position="0 -0.02 0" color="black" rotation="-90 0 0"></a-plane>
       <a-camera id="myCamera" position="0 1 0">
         <a-cursor intersection-spawn="event: click; mixin: voxel"></a-cursor>
-      </a-camera> -->
+      </a-camera>
       
-      <a-box id="myBox" static-body position="0 0.5 -7" rotation="0 0 0" width="9" material="src: #wood"></a-box>
-      <a-sphere dynamic-body radius="0.5" position="0 1.5 -7" color="#9FD8EF"></a-sphere>
-      <a-sphere dynamic-body radius="0.5" position="-2 1.5 -7" color="#9FD8EF"></a-sphere>
-      <a-sphere dynamic-body radius="0.5" position="-4 1.5 -7" color="#9FD8EF"></a-sphere>
-      <a-sphere dynamic-body radius="0.5" position="2 1.5 -7" color="#9FD8EF"></a-sphere>
-      <a-sphere dynamic-body radius="0.5" position="4 1.5 -7" color="#9FD8EF"></a-sphere>
+      <a-box static-body class="target" color="red" radius="1" position="-2 3 -5"></a-box>
+  
+      <a-box static-body class="target" color="white" radius="1" position="2 3 -5"></a-box>
     </a-scene>
-    <script src="https://www.codechangers.com/lessons/vr/aframe/shoot.js"></script>
-    <script src="https://www.codechangers.com/lessons/vr/aframe/vr.js"></script>
-    <script src="https://codechangers.com/camps2019/vr/shoot-partial.js"></script>
-    <script src="main.js"></script>
   </body>
+  <script src="https://codechangers.com/camps2019/vr/shoot-partial.js"></script>
+  <script src="script.js"></script>
+  <script>nextLevel = 'level2.html';</script>
 </html>
