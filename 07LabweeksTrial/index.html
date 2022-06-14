@@ -12,10 +12,10 @@
   </head>
   <body>
     <a-scene id="myScene">
-      <a-camera id="myCamera" position="0 1 0">
-        <a-cursor intersection-spawn="event: click; mixin: voxel"></a-cursor>
+      <a-camera id="myCamera" pointer-lock-enabled="true" position="0 1 0">
+         <a-cursor fuse="true"></a-cursor>
       </a-camera>
-      <a-box id="myBox" static-body position="0 0.5 -7" rotation="0 0 0" width="9" color="brown"></a-box>
+      <a-box id="myBox" static-body position="0 0.5 -7" rotation="0 0 0" width="9" color="green"></a-box>
       <a-sphere dynamic-body radius="0.5" position="0 1.5 -7" color="#9FD8EF"></a-sphere>
       <a-sphere dynamic-body radius="0.5" position="-2 1.5 -7" color="#9FD8EF"></a-sphere>
       <a-sphere dynamic-body radius="0.5" position="-4 1.5 -7" color="#9FD8EF"></a-sphere>
