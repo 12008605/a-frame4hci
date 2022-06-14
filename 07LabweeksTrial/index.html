@@ -22,8 +22,14 @@
     
       <a-sky material="src: #space; repeat: 5 5"></a-sky>
           
+      
+      <!-- CAMERA 1
       <a-camera pointer-lock-enabled="true" position="0 1 0" id="myCamera">
          <a-cursor fuse="true"></a-cursor>
+      </a-camera> -->
+      
+      <a-camera id="myCamera" position="0 1 0">
+        <a-cursor intersection-spawn="event: click; mixin: voxel"></a-cursor>
       </a-camera>
       
       <a-box id="myBox" static-body position="0 0.5 -7" rotation="0 0 0" width="9" material="src: #wood"></a-box>
