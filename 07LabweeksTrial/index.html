@@ -12,10 +12,6 @@
 
   </head>
   <body>
-
-    <script src="https://www.codechangers.com/lessons/vr/aframe/shoot.js"></script>
-    <script src="https://www.codechangers.com/lessons/vr/aframe/vr.js"></script>
-
     <a-scene id="myScene" <!--style="background-image: url('images/space3.jpeg'); background-repeat: repeat;" --> >
     <a-entity environment="preset: forest" preset-switcher id="environment" sound="src:https://www.youtube.com/watch?v=xNN7iTA57jM; autoplay:true;"></a-entity>
       <a-assets>
@@ -25,59 +21,20 @@
       </a-assets>
     
       <a-sky material="src: #space; repeat: 5 5"></a-sky>
-
-      <!-- <a-camera>
-        <a-entity id="mouseCursor"
-          cursor="fuse: true; fuseTimeout: 1500">
-        </a-entity>
-        <a-ring id="cursorRing" 
-          position="0 0 -1"
-          radius-inner= "0.02"
-          radius-outer= "0.03"
-          material="color: red; shader: flat">
-        </a-ring> 
-      </a-camera> -->
-    
           
       <a-camera pointer-lock-enabled="true" position="0 1 0" id="myCamera">
          <a-cursor fuse="true"></a-cursor>
       </a-camera>
       
-      <a-box id="myBox" 
-        static-body
-        position="0 0.5 -7" 
-        rotation="0 0 0" 
-        width="9"
-        segments-height="53"
-        material="src: #wood">
-      </a-box>
+      <a-box id="myBox" static-body position="0 0.5 -7" rotation="0 0 0" width="9" material="src: #wood"></a-box>
       <a-sphere dynamic-body radius="0.5" position="0 1.5 -7" color="#9FD8EF"></a-sphere>
       <a-sphere dynamic-body radius="0.5" position="-2 1.5 -7" color="#9FD8EF"></a-sphere>
       <a-sphere dynamic-body radius="0.5" position="-4 1.5 -7" color="#9FD8EF"></a-sphere>
       <a-sphere dynamic-body radius="0.5" position="2 1.5 -7" color="#9FD8EF"></a-sphere>
       <a-sphere dynamic-body radius="0.5" position="4 1.5 -7" color="#9FD8EF"></a-sphere>
-      <!--
-      <a-plane id="ground"
-        position="0 0 -4" 
-        rotation="-90 0 0" 
-        width="100" 
-        height="100" 
-        color="#7BC8A4" 
-        material="src: #grass; repeat: 10 10"
-        shadow>
-      </a-plane> -->
+
+      <script src="https://www.codechangers.com/lessons/vr/aframe/shoot.js"></script>
+      <script src="https://www.codechangers.com/lessons/vr/aframe/vr.js"></script>
     </a-scene>
-
-    <!-- TESTING YOUTUBE IMAGE CURVE TUTORIAL
-    <a-scene background="color: #000000">
-      <a-assets>
-        <img id="my-image" src="images/space1.jpg">
-      </a-assets>
-      <!-- Using the asset management system.
-      <a-curvedimage src="#my-image" height="15.0" radius="5.7" theta-length="361" rotation="0 -150 0" scale="0.8 0.8 0.8" position="0 2 5"></a-curvedimage>
-      <!-- Defining the URL inline. Not recommended but more comfortable for web developers.
-      <!--<a-curvedimage src="img/BatmanvSuperman.jpg"></a-curved-image>
-    </a-scene> -->
-
   </body>
 </html>
