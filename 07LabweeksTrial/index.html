@@ -12,12 +12,12 @@
   </head>
   <body>
     <a-scene id="myScene">
-      <a-plane id="floor" static-body height="1000" width="1000" position="0 -0.02 0" color="black" rotation="-90 0 0"></a-plane>
+      <a-plane id="floor" static-body height="1000" width="1000" position="0 -0.02 0" color="green" rotation="-90 0 0"></a-plane>
       <a-camera id="myCamera" position="0 1 0">
         <a-cursor intersection-spawn="event: click; mixin: voxel"></a-cursor>
       </a-camera>
       
-      <a-box static-body class="target" color="yellow" radius="1" position="-2 3 -5"></a-box>
+      <a-box static-body class="target" color="purple" radius="1" position="-2 3 -5"></a-box>
   
       <a-box static-body class="target" color="pink" radius="1" position="2 3 -5"></a-box>
     </a-scene>
