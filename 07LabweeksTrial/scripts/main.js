@@ -1,5 +1,3 @@
-let nextLevel = 'index.html';
-
 const shoot = () => {
   const bullet = document.createElement("a-sphere");
   let pos = myCamera.getAttribute("position");
@@ -62,23 +60,3 @@ document.onkeydown = event => {
     teleport();
   }
 };
-
-
-
-/*
- * click-events can use a fuse (default on mobile). So the event only fires, if the cursor is on the object for a specified time. 
- */
-
-// var growspeed = 1.2;
-
-// function grow(){
-// 	myOtherBox.object3D.scale.x *= growspeed;
-// 	myOtherBox.object3D.scale.y *= growspeed;
-// 	myOtherBox.object3D.scale.z *= growspeed;
-// 	//console.log(myOtherBox.object3D.scale);
-// }
-
-// myOtherBox.addEventListener('click', function(){ // uses a fuse
-// 	grow();
-// 	console.log('grew');
-// });
