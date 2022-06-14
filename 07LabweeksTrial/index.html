@@ -8,19 +8,15 @@
     <script src="https://unpkg.com/aframe-environment-component@1.1.0/dist/aframe-environment-component.min.js"></script>
     <script src="scripts/main.js" defer></script>
     <script src="https://codechangers.com/physics.js"></script>
-    <script src="https://www.codechangers.com/lessons/vr/aframe/physics.js"></script>
+    <!-- <script src="https://www.codechangers.com/lessons/vr/aframe/physics.js"></script> -->
 
   </head>
   <body>
     <a-scene id="myScene">
-    <a-entity environment="preset: forest" preset-switcher id="environment" sound="src:https://www.youtube.com/watch?v=xNN7iTA57jM; autoplay:true;"></a-entity>
+    <a-entity environment="preset: default" preset-switcher id="environment" sound="src:https://www.youtube.com/watch?v=xNN7iTA57jM; autoplay:true;"></a-entity>
       <a-assets>
-          <img id="space" src="images/space3.jpeg"/>
           <img id="wood" src="images/wood.jpg" />
-          <img id="grass" src="images/grass.jpg" />
       </a-assets>
-    
-      <a-sky material="src: #space; repeat: 5 5"></a-sky>
           
       
       <!-- CAMERA 1
